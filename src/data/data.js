@@ -52,6 +52,34 @@ const menu=[
     url:''
   }
 ]
+const tabs=[
+  {
+    key:'1',
+    name:'我的网盘',
+    url:'/wdwp'
+  },
+  {
+    key:'2',
+    name:'传输列表',
+    url:'/cslb'
+  },
+  {
+    key:'3',
+    name:'好友分享',
+    url:'/hyfx'
+  },
+  {
+    key:'4',
+    name:'功能宝箱',
+    url:'/gnbx'
+  },
+  {
+    key:'5',
+    name:'找资源',
+    url:''
+  }
+]
 export {
-  menu
+  menu,
+  tabs
 }

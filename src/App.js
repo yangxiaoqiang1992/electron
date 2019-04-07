@@ -1,13 +1,13 @@
 import React, { Component, Fragment } from 'react';
 import Header from '@components/common/header'
-import AsideMenu from '@components/common/menu'
-import {menu} from '@src/data/data'
+import '@static/css/pages/page.css'
+import RouterMap from '@router/router'
 class App extends Component {
   render() {
     return (
       <Fragment>
-         <Header  />
-         <AsideMenu menu={menu}/>
+         <Header />
+         <RouterMap />
       </Fragment>
     );
   }

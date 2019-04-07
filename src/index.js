@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '@static/css/index.css';
 import "antd/dist/antd.css";
+import '@static/css/index.css';
 import App from './App';
 
 

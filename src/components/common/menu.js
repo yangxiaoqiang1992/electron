@@ -41,6 +41,6 @@ export default class AsideMenu extends Component {
     )
   }
 }
-Menu.propTypes={
-  menu:PropTypes.array.isRequired
-}
+// Menu.propTypes={
+//   menu:PropTypes.array.isRequired
+// }
