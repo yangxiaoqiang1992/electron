@@ -1,0 +1,14 @@
+.header{
+    height:60px;
+    width:100%;
+    background:rgb(253,353,353);
+    -webkit-box-shadow: 0 2px 8px #e0e2e3;
+    box-shadow: 0 2px 8px #e0e2e3;
+    -webkit-app-region: drag;
+}
+.header-row{
+    height:100%;
+}
+.header-row  .ant-col{
+    height:100%;
+}

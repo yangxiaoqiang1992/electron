@@ -1,0 +1,13 @@
+.aside-menu{
+    height:100%;
+    width:150px;
+    background:#f4f4f4;
+    border-right:1px solid #dfdfdf;
+}
+.aside-menu  .ant-menu-vertical{
+   border-right:none; 
+   background-color:transparent;
+}
+.aside-menu .ant-menu{
+   background-color:transparent;
+}
