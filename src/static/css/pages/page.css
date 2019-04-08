@@ -6,3 +6,56 @@
 .page-inner{
   flex:1;
 }
+
+/* 功能宝箱样式 */
+.page-gnbx{
+  flex-direction: column;
+  align-items: center;
+}
+.page-title{
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex:2;
+}
+.page-title h2{
+  font-size:24px;
+  color:#333;
+}
+.page-title p{
+  font-size:16px;
+  color:#999;
+}
+.tool-list{
+  width:100%;
+  flex:3;
+  padding-bottom:10%;
+}
+.tool-list ul{
+  padding:0 15%;
+  height:100%;
+  display:flex;
+  justify-content: space-between;
+}
+.tool-list ul li{
+  list-style: none;
+  text-align: center;
+}
+.tool-list ul li .anticon{
+  font-size:32px;
+}
+.tool-list ul li p{
+  margin:0;
+}
+.icon{
+  width:80px;
+  height:80px;
+  border-radius:80px;
+  background:#ddd;
+  margin:0 auto 15px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}

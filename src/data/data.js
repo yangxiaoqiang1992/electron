@@ -56,7 +56,7 @@ const tabs=[
   {
     key:'1',
     name:'我的网盘',
-    url:'/wdwp'
+    url:'/'
   },
   {
     key:'2',
@@ -79,7 +79,35 @@ const tabs=[
     url:''
   }
 ]
+const gnbx=[
+  {
+    title:'垃圾文件清理',
+    desc:'节省网盘空间',
+    imgUrl:'code'
+  },
+  {
+    title:'自动备份',
+    desc:'随时备份，告别丢失',
+    imgUrl:'cloud-upload'
+  },
+  {
+    title:'回收站',
+    desc:'帮您找回丢失文件',
+    imgUrl:'delete'
+  },
+  {
+    title:'数据线',
+    desc:'手机和电脑无线传输',
+    imgUrl:'laptop'
+  },
+  {
+    title:'锁定网盘',
+    desc:'防止他人偷窥数据',
+    imgUrl:'lock'
+  }
+]
 export {
   menu,
-  tabs
+  tabs,
+  gnbx
 }
