@@ -3,6 +3,7 @@
     width:150px;
     background:#f4f4f4;
     border-right:1px solid #dfdfdf;
+    position: relative;
 }
 .aside-menu  .ant-menu-vertical{
    border-right:none; 

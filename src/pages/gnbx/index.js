@@ -16,7 +16,7 @@ export default class Gnbx extends Component {
                gnbx.map((item,index)=>{
                   return (
                         <li key={index}>
-                          <div className="icon">
+                          <div className={['icon',item.style].join(' ')}>
                              <Icon type={item.imgUrl}></Icon>
                           </div>
                           <p>{item.title}</p>

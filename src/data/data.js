@@ -83,31 +83,57 @@ const gnbx=[
   {
     title:'垃圾文件清理',
     desc:'节省网盘空间',
-    imgUrl:'code'
+    imgUrl:'code',
+    style:'blue'
   },
   {
     title:'自动备份',
     desc:'随时备份，告别丢失',
-    imgUrl:'cloud-upload'
+    imgUrl:'cloud-upload',
+    style:'yellow'
   },
   {
     title:'回收站',
     desc:'帮您找回丢失文件',
-    imgUrl:'delete'
+    imgUrl:'delete',
+    style:'blue'
   },
   {
     title:'数据线',
     desc:'手机和电脑无线传输',
-    imgUrl:'laptop'
+    imgUrl:'laptop',
+    style:'yellow'
   },
   {
     title:'锁定网盘',
     desc:'防止他人偷窥数据',
-    imgUrl:'lock'
+    imgUrl:'lock',
+    style:'red'
+  }
+]
+const sideMenu =[
+  {
+    key:'1',
+    name:'会话',
+    icon:'message',
+    url:''
+  },
+  {
+    key:'2',
+    name:'好友',
+    icon:'user',
+    url:''
+  },
+  {
+    key:'3',
+    name:'群组',
+    icon:'usergroup-add',
+    url:''
   }
 ]
 export {
   menu,
   tabs,
-  gnbx
+  gnbx,
+  sideMenu
 }

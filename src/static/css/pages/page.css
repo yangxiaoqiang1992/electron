@@ -48,14 +48,81 @@
 }
 .tool-list ul li p{
   margin:0;
+  color:#333;
+  font-size:15px;
+}
+.tool-list ul li p.desc{
+  color:#666;
+  font-size:12px;
 }
 .icon{
   width:80px;
   height:80px;
   border-radius:80px;
-  background:#ddd;
   margin:0 auto 15px;
   display:flex;
   align-items: center;
   justify-content: center;
+}
+.icon .anticon{
+  color:#fff;
+}
+.icon.blue{
+  background:-webkit-linear-gradient(45deg,#4d9aff,#4bbbff);
+  background:linear-gradient(45deg,#4d9aff,#4bbbff);
+}
+.icon.yellow{
+  background:-webkit-linear-gradient(45deg,#fea223,#ffc006);
+  background:linear-gradient(45deg,#fea223,#ffc006);
+}
+.icon.red{
+  background:-webkit-linear-gradient(45deg,#ff6060,#ff7b7b);
+  background:linear-gradient(45deg,#ff6060,#ff7b7b);
+}
+
+/* 好友分享样式 */
+.aside-menu.hyfx_tab{
+  width:65px;
+  padding-top:65px;
+  box-sizing: border-box;
+}
+.hyfx_tab .ant-menu-item{
+  padding:8px 0!important;
+  text-align: center;
+  white-space: normal;
+  height:auto;
+  line-height:normal;
+  margin-bottom:5px;
+}
+.hyfx_tab .ant-menu-item .anticon{
+  font-size:20px;
+  color:#666;
+  margin:0;
+  width:100%;
+}
+.hyfx_tab .ant-menu-item span{
+  display:inline-block; 
+  line-height: 1.5; 
+  font-size:12px;
+  color:#333;
+}
+.hyfx_tab  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+  background-color: #4d9fff;
+  color:#fff;
+}
+.hyfx_tab .ant-menu-vertical .ant-menu-item::after,
+.hyfx_tab .ant-menu-inline .ant-menu-item-selected::after{
+  border:none !important;
+}
+.hyfx_tab .ant-menu-item.ant-menu-item-selected .anticon,
+.hyfx_tab .ant-menu-item.ant-menu-item-selected span{
+  color:#fff;
+}
+.add-btn{
+  position: absolute;
+  top:82%;
+  left:0;
+  right:0;
+  margin:auto;
+  z-index:2;
 }

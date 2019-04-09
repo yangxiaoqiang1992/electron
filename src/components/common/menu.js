@@ -20,23 +20,24 @@ export default class AsideMenu extends Component {
         })
        return <Menu.SubMenu  key={data.key} title={<span><Icon type={data.icon} /><span>{data.name}</span></span>}>{sub}</Menu.SubMenu> 
     }else{
-      return <Menu.Item key={data.key}><Icon type={data.icon} />{data.name}</Menu.Item>
+      return <Menu.Item key={data.key}><Icon type={data.icon} /><span>{data.name}</span></Menu.Item>
     }
   }
   render() {
     return (
-      <aside className="aside-menu"> 
+      <aside className={['aside-menu',this.props.page ? this.props.page + '_tab' :''].join(' ')}> 
         <Menu mode="inline" inlineCollapsed={this.state.collapsed}  defaultOpenKeys={['2']}>
           {
             this.props.menu.map((item)=>{ 
                 if(typeof(item.children)!='undefined' && item.children.length > 0){
                   return this.renderMenu(item)
                 }else{
-                  return <Menu.Item key={item.key}><Icon type={item.icon} />{item.name}</Menu.Item>
+                  return <Menu.Item key={item.key}><Icon type={item.icon} /><span>{item.name}</span></Menu.Item>
                 }
             })
           }
         </Menu>
+        {this.props.children}
       </aside> 
     )
   }
