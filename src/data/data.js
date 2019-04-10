@@ -131,9 +131,27 @@ const sideMenu =[
     url:''
   }
 ]
+const cslbMneu=[
+  {
+    key:'1',
+    name:'正在下载',
+    icon:'download'
+  },
+  {
+    key:'2',
+    name:'正在上传',
+    icon:'upload'
+  },
+  {
+    key:'3',
+    name:'传输完成',
+    icon:'check-circle'
+  }
+]
 export {
   menu,
   tabs,
   gnbx,
-  sideMenu
+  sideMenu,
+  cslbMneu
 }
