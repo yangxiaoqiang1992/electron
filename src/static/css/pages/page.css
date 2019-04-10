@@ -130,3 +130,13 @@
   margin:auto;
   z-index:2;
 }
+
+.page-header{
+  padding:8px 24px;
+  height:48px;
+  border-bottom:1px solid #eee;
+  background:#fcfdfe;
+}
+.page-header .ant-page-header-title-view-extra{
+  top:8px;
+}

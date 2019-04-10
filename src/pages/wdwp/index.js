@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import AsideMenu from '@components/common/menu'
+import ToolsHeader from '@components/common/toolsHeader'
 import {menu} from '@src/data/data'
 
 export default class Wdwp extends Component {
@@ -8,7 +9,7 @@ export default class Wdwp extends Component {
       <main className="page-main">
         <AsideMenu menu={menu}/>
         <div className="page-inner">
-             我的网盘
+            <ToolsHeader />
         </div>
       </main>
     )

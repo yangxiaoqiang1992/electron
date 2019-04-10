@@ -148,10 +148,70 @@ const cslbMneu=[
     icon:'check-circle'
   }
 ]
+const tools=[
+  {
+    type:'button',
+    name:'上传',
+    icon:'upload'
+  },
+  {
+    type:'button',
+    name:'下载',
+    icon:'download'
+  },
+  {
+    type:'button',
+    name:'分享',
+    icon:'share-alt'
+  },
+  {
+    type:'button',
+    name:'删除',
+    icon:'delete'
+  },
+  {
+    type:'button',
+    name:'新建文件夹',
+    icon:'file-add'
+  },
+  {
+    type:'select',
+    name:'离线下载',
+    icon:'download',
+    list:[
+      {
+        name:"新建普通下载"
+      },
+      {
+        name:"新建BT任务"
+      },
+      {
+        name:"查看任务列表"
+      }
+    ]
+  },
+  {
+    type:'select',
+    name:'更多',
+    icon:'ellipsis',
+    list:[
+      {
+        name:"移动到"
+      },
+      {
+        name:"移入隐藏空间"
+      },
+      {
+        name:"文档历史版本"
+      }
+    ]
+  }
+]
 export {
   menu,
   tabs,
   gnbx,
   sideMenu,
-  cslbMneu
+  cslbMneu,
+  tools
 }
