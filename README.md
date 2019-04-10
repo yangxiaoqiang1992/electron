@@ -1,6 +1,6 @@
 ## React + Electron 仿百度网盘
 
-### react项目环境搭建
+## react项目环境搭建
 
 这里使用react官方推荐的 `create-react-app` 脚手架工具搭建基础开发环境
 
@@ -25,7 +25,7 @@
 到此，一个react项目环境搭建完成
 
 
-### electron环境搭建
+## electron环境搭建
 
 我们可以选择全局安装，执行 `npm install electron -g`,由于Electron安装包下载慢导致下载失败，windows平台的解决方式为：
 在C盘找到 `\AppData\Local\electron\Cache`文件夹，访问淘宝镜像网站下载安装包 [https://npm.taobao.org/mirrors/electron/](https://npm.taobao.org/mirrors/electron/)对应操作系统下载对应zip，将下载的zip文件包拷贝到上述目录，然后继续安装`npm install electron`即可
@@ -98,6 +98,4 @@ app.on('activate', function () {
     "electron-start": "electron ."
   }
 ```
-启动react之后，在cmd命令行下运行 `npm run electron-start`启动electron
-
-至此，react和electron的开发环境搭建完成，electron将根据react项目热加载
+启动react之后，在cmd命令行下运行 `npm run electron-start`启动electron，至此，react和electron的开发环境搭建完成，electron将根据react项目热加载
