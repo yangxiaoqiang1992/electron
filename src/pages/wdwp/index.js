@@ -2,8 +2,10 @@ import React, { Component } from 'react'
 import { Input,Icon } from 'antd'
 import AsideMenu from '@components/common/menu'
 import ToolsHeader from '@components/common/toolsHeader'
-import {menu,tools} from '@src/data/data'
 import Tools from '@components/common/Tools'
+import List from '@components/common/list'
+import {menu,tools} from '@src/data/data'
+import {dataSource,columns} from '@src/data/temp'
 
 
 export default class Wdwp extends Component {
@@ -35,6 +37,7 @@ export default class Wdwp extends Component {
         breadcrumbName:'我的网盘',
       }
     ]
+
     return (
       <main className="page-main">
         <AsideMenu menu={menu} />
@@ -47,6 +50,7 @@ export default class Wdwp extends Component {
             <ToolsHeader breadcrumb={ routes }  backIcon={true}  className="page-header-bread">
                <Input.Search />
             </ToolsHeader>
+            <List type={this.state.listStyle} dataSource={dataSource}  columns={columns}  className="list1" showAction showHoverAction/>
         </div>
       </main>
     )

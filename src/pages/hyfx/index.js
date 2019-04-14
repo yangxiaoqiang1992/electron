@@ -5,8 +5,8 @@ import {sideMenu} from "@src/data/data"
 
 export default class Hyfx extends Component {
   render() {
-    const content = ['创建群组','添加好友'].map((item)=>{
-      return <div>{item}</div>
+    const content = ['创建群组','添加好友'].map((item,index)=>{
+      return <div key={index}>{item}</div>
     })
     return (
       <main className="page-main">

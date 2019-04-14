@@ -7,7 +7,11 @@ import Gnbx from '@src/pages/gnbx'
 
 export default ()=>(
     <Switch>
-      <Route path="/" exact component={Wdwp}></Route>
+      <Route path="/" exact component={Wdwp}>
+      </Route>
+      <Route path="/wdwp"  component={Wdwp}>
+        {/* <Route path="/recent" conponent={recent}></Route> */}
+      </Route>
       <Route path="/cslb"  component={Cslb}></Route>
       <Route path="/hyfx"  component={Hyfx}></Route>
       <Route path="/gnbx"  component={Gnbx}></Route>

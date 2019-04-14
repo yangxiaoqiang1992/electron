@@ -1,0 +1,76 @@
+.list{
+  flex:1;
+  position: relative;
+  overflow:auto;
+}
+.list .ant-table-wrapper,
+.list .ant-spin-nested-loading,
+.list .ant-spin-container{
+  height:100%;
+}
+.list .ant-table-thead > tr > th,
+.list .ant-table-tbody > tr > td{
+  padding: 12px 16px;
+  position: relative;
+}
+.operate-btn{
+  font-size:16px;
+  margin-right:20px;
+  cursor: pointer;
+}
+.operate-btn:hover{
+  color:#1890ff;
+}
+.file-icon{
+  margin-right:10px;
+  font-size:14px;
+}
+.hover-action{
+  position: absolute;
+  right:0;
+  display:none;
+}
+.hover-action .operate-btn{
+  margin-right:10px; 
+}
+.list1 .ant-table-tbody > tr > td:hover .hover-action{
+  display:inline-block;
+}
+.cell-list{
+  padding:20px;
+  overflow:hidden;
+}
+.cell-list li{
+  list-style: none;
+}
+.cell-list li{
+  display:block;
+  float:left;
+  width:120px;
+  height:120px;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin:5px;
+}
+.cell-list li:hover{
+  background:rgba(159,190,221,.1);
+}
+.cell-icon{
+  padding-bottom:24px;
+}
+.cell-icon .anticon{
+  font-size:40px;
+  margin:0;
+  color:#888;
+}
+.cell-name{
+  position: absolute;
+  height:24px;
+  display:inline-block;
+  width:100%;
+  bottom:10px;
+}

@@ -4,10 +4,11 @@
     background:rgb(253,353,353);
     -webkit-box-shadow: 0 2px 8px #e0e2e3;
     box-shadow: 0 2px 8px #e0e2e3;
-    /* -webkit-app-region: drag; */
+     /* -webkit-app-region: drag;   */
 }
 .header-row{
     height:100%;
+    /* -webkit-app-region: no-drag;  */
 }
 .header-row  .ant-col{
     height:100%;
