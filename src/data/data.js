@@ -131,7 +131,7 @@ const sideMenu =[
     url:''
   }
 ]
-const cslbMneu=[
+const cslbMenu=[
   {
     key:'1',
     name:'正在下载',
@@ -212,6 +212,6 @@ export {
   tabs,
   gnbx,
   sideMenu,
-  cslbMneu,
+  cslbMenu,
   tools
 }

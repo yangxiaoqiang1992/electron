@@ -12,7 +12,15 @@ export default class List extends Component {
     }) 
   }
   clickHandler(item,index,e){
-    console.log(index)
+    // const keysArr = this.state.selectedRowKeys
+    // if(!keysArr.includes(item.key)){
+    //   keysArr.push(item.key)
+    // }else{
+    //   keysArr = []
+    // }
+    // this.setState({
+    //   selectedRowKeys:keysArr
+    // })
   }
   render() {
     const rowSelection={
@@ -95,8 +103,10 @@ export default class List extends Component {
           {
             dataSource.map((item,index)=>{
               // react事件参数，e必须为最后一个参数
-              return (<li key={index}  onClick={(e)=>{this.clickHandler(item,index,e)}}>
-                       <span className="cell-icon"><Icon type={item.type} key={item.key} className="operate-btn" /></span>
+              let icon = item.type === 'folder'?'folder':'file-'+item.fileType 
+              return (
+                     <li key={index}  onClick={(e)=>{this.clickHandler(item,index,e)}}>
+                       <span className="cell-icon"><Icon type={icon} key={item.key} className="operate-btn" /></span>
                        <span className="cell-name">{item.name}</span>
                       </li>)
             })
